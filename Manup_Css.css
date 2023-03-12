@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --fweight1: 600;
+    --fweight2: 400;
+    --fsize: 16px;
+    --color1:linear-gradient(to right, #ee8425 0%, #f9488b 100%), linear-gradient(to right, #ee8425 0%, #f9488b 100%);
+    --colorred:#dc3545;
+}
+
+
+
+/* Navigation Bar */
+.navbar{
+    width: 60%;
+    height: 120px;
+    margin: auto;
+    display: flex;
+}
+
+.logo{
+    height: 100%;
+    width: 10%;
+}
+
+.logo img{
+    margin-top: 40%;
+}
+
+.links{
+    width: 90%;
+    height: 100%;
+}
+
+.links ul{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.links li {
+    float: left;
+    margin-right: 80px;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.links li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 100%;
+    height: 2px;
+    border-radius: 0.5cm;
+    background-color: var(--colorred);
+}
+
+.links li:hover{
+    overflow:visible;
+}
+
+.links a{
+    text-decoration: none;
+    font-family: Work Sans;
+    color: black;
+    font-weight: var(--fweight1);
+    font-size: var(--fsize);
+}
+
+
+
+
+/* Change Your Mind */
+.change-your-mind-content{
+    width: 100%;
+    height: 700px;
+    background-image: url("images/background1.jpg");
+    background-size: cover;
+}
+
+.cymc{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+}
+
+.cymccontent{
+    width: 60%;
+    height: 100%;
+}
+
+.cymccontent p{
+    font-weight: var(--fweight2);
+    font-size: var(--fsize);
+    letter-spacing: 2px;
+    color: #f44949;
+    margin-top: 30%;
+}
+
+.cymccontent h1{
+    font-weight: var(--fweight1);
+    font-size: 60px;
+    color: white;
+    width: 80%;
+}
+
+
+.cymcimage{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+.cymcimage img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 93%;
+}
+
+.primary-btn{
+    padding: 12px 40px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-weight: var(--fweight1);
+    font-size: var(--fsize);
+    cursor: pointer;
+    background-image: var(--color1);   
+    border-radius: 50px; 
+    transition: 0.5s all;
+}
+
+.primary-btn:hover {
+    color: black;  
+}
+
+
+
+
+
+/* CountDown */
+.countdown{
+    width: 100%;
+    height: 180px;
+    background-image: var(--color1);
+    margin-bottom: 110px;
+
+}
+
+.cdcontent{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.cdtext{
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.cdtext p{
+    font-size: var(--fsize);
+    font-weight: var(--fweight2);
+}
+
+.cdtext h2{
+    font-size: 40px;
+    font-weight: var(--fweight1);
+}
+
+
+
+
+
+/*  About Conference  */
+
+.aboutconference{
+    width: 60%;
+    margin: auto;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.acimage{
+    width: 50%;
+    height: auto;
+}
+
+.acimage img{
+}
+
+.accontent{
+    width: 50%;
+    height: auto;
+}
+
+.accontent h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 90px;
+    margin-bottom: 32px;
+}
+
+.accontent p {
+    font-size: var(--fsize);
+    color: #6a6b7c;
+    margin-bottom: 21px;
+}
+
+.accontent ul{
+    margin-left: -15px;
+    margin-bottom: 31px;
+}
+
+.accontent ul li{
+    font-size: var(--fsize);
+    color: #6a6b7c;
+    margin-bottom: 11px;
+    list-style-image: url("images/arrow.png");
+}
+
+.accontent a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #171822;
+    font-weight: 600;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.accontent a::after{
+content: "";
+position: absolute;
+left: 0;
+top: 25px;
+width: 100%;
+height: 2px;
+border-radius: 0.5cm;
+background-color: var(--colorred);
+}
+
+.accontent a:hover{
+    color: var(--colorred);
+}
+
+
+
+
+             /* Media Query */
+
+/* ipads / Tablets */
+@media(min-width:481px) and (max-width:768Px) {
+
+    .navbar{
+        width: 95%;
+        height: 120px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: blue;
+    }
+    
+    .logo{
+        height: 100%;
+        width: 40%;
+    }
+    
+    .logo img{
+        margin-top: 25%;
+    }
+    
+    .links{
+        height: 100%;
+        width: 60%;
+        overflow: hidden;
+    }
+    
+    .links ul{
+        margin-top: 0px;
+        margin-left: 40px;
+    }
+    
+    .links li {
+        float: left;
+        margin-right: 80px;
+        list-style: none;
+        position: relative;
+    }
+    
+    .links li::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 25px;
+        width: 100%;
+        height: 2px;
+        border-radius: 0.5cm;
+        background-color: var(--colorred);
+    }
+    
+    .links li:hover{
+        overflow:visible;
+    }
+    
+    .links a{
+        text-decoration: none;
+        font-family: Work Sans;
+        color: black;
+        font-weight: var(--fweight1);
+        font-size: var(--fsize);
+    }
+    
+
+
+
+
+
+    /* Change Your Mind */
+.change-your-mind-content{
+    width: 100%;
+    height: 1100px;
+    background-image: url("images/background1.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.cymc{
+    width: 95%;
+    transform: translate(3%);
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: space-around;
+}
+
+.cymccontent{
+    width: 100%;
+}
+
+.cymccontent p{
+    font-weight: var(--fweight2);
+    font-size: 19;
+    letter-spacing: 2px;
+    color: #f44949;
+    margin-top: 30%;
+}
+
+.cymccontent h1{
+    font-weight: var(--fweight1);
+    font-size: 40px;
+    color: white;
+}
+
+
+.cymcimage{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.primary-btn{
+    padding: 12px 40px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-weight: var(--fweight1);
+    font-size: var(--fsize);
+    cursor: pointer;
+    background-image: var(--color1);   
+    border-radius: 50px; 
+    transition: 0.5s all;
+}
+
+.primary-btn:hover {
+    color: black;  
+}
+
+
+
+
+/* CountDown */
+.countdown{
+    width: 100%;
+    height: auto;
+    background-image: var(--color1);
+
+}
+
+.cdcontent{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: flex;
+}
+
+.cdtext{
+    margin: auto;
+    text-align: left;
+    color: white;
+}
+
+.cdtext p{
+    font-size: var(--fsize);
+    font-weight: var(--fweight2);
+}
+
+.cdtext h2{
+    font-size: 40px;
+    font-weight: var(--fweight1);
+}
+
+
+
+
+
+/*  About Conference  */
+
+.aboutconference{
+    width: 95%;
+    margin: auto;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.acimage{
+    width: 100%;
+    height: 100%;
+}
+
+.acimage img{
+    width: 100%;
+}
+
+.accontent{
+    width: 100%;
+    height: auto;
+}
+
+.accontent h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 90px;
+    margin-bottom: 32px;
+}
+
+.accontent p {
+    font-size: var(--fsize);
+    color: #6a6b7c;
+    margin-bottom: 21px;
+}
+
+.accontent ul{
+    margin-left: -15px;
+    margin-bottom: 31px;
+}
+
+.accontent ul li{
+    font-size: var(--fsize);
+    color: #6a6b7c;
+    margin-bottom: 11px;
+    list-style-image: url("images/arrow.png");
+}
+
+.accontent a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #171822;
+    font-weight: 600;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+.accontent a::after{
+content: "";
+position: absolute;
+left: 0;
+top: 25px;
+width: 100%;
+height: 2px;
+border-radius: 0.5cm;
+background-color: var(--colorred);
+}
+
+.accontent a:hover{
+    color: var(--colorred);
+}
+
+
+}
+
+/* Small Screen / Laptops */
+@media(min-width:769px) and (max-width:1024Px) {
+    
+
+    /* Navigation Bar */
+.navbar{
+    width: 60%;
+    height: 120px;
+    margin: auto;
+    display: flex;
+}
+
+.logo{
+    height: 100%;
+    width: 10%;
+}
+
+.logo img{
+    margin-top: 40%;
+}
+
+.links{
+    width: 90%;
+    height: 100%;
+}
+
+.links ul{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.links li {
+    float: left;
+    margin-right: 80px;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.links li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 100%;
+    height: 2px;
+    border-radius: 0.5cm;
+    background-color: var(--colorred);
+}
+
+.links li:hover{
+    overflow:visible;
+}
+
+.links a{
+    text-decoration: none;
+    font-family: Work Sans;
+    color: black;
+    font-weight: var(--fweight1);
+    font-size: var(--fsize);
+}
+
+
+
+
+/* Change Your Mind */
+.change-your-mind-content{
+    width: 100%;
+    height: 700px;
+    background-image: url("images/background1.jpg");
+    background-size: cover;
+}
+
+.cymc{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+}
+
+.cymccontent{
+    width: 60%;
+    height: 100%;
+}
+
+.cymccontent p{
+    font-weight: var(--fweight2);
+    font-size: var(--fsize);
+    letter-spacing: 2px;
+    color: #f44949;
+    margin-top: 30%;
+}
+
+.cymccontent h1{
+    font-weight: var(--fweight1);
+    font-size: 60px;
+    color: white;
+    width: 80%;
+}
+
+
+.cymcimage{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+.cymcimage img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 93%;
+}
+
+.primary-btn{
+    padding: 12px 40px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-weight: var(--fweight1);
+    font-size: var(--fsize);
+    cursor: pointer;
+    background-image: var(--color1);   
+    border-radius: 50px; 
+    transition: 0.5s all;
+}
+
+.primary-btn:hover {
+    color: black;  
+}
+
+
+
+
+
+/* CountDown */
+.countdown{
+    width: 100%;
+    height: 180px;
+    background-image: var(--color1);
+    margin-bottom: 110px;
+
+}
+
+.cdcontent{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.cdtext{
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.cdtext p{
+    font-size: var(--fsize);
+    font-weight: var(--fweight2);
+}
+
+.cdtext h2{
+    font-size: 40px;
+    font-weight: var(--fweight1);
+}
+
+
+
+
+
+/*  About Conference  */
+
+.aboutconference{
+    width: 60%;
+    margin: auto;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.acimage{
+    width: 50%;
+    height: auto;
+}
+
+.acimage img{
+}
+
+.accontent{
+    width: 50%;
+    height: auto;
+}
+
+.accontent h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 90px;
+    margin-bottom: 32px;
+}
+
+.accontent p {
+    font-size: var(--fsize);
+    color: #6a6b7c;
+    margin-bottom: 21px;
+}
+
+.accontent ul{
+    margin-left: -15px;
+    margin-bottom: 31px;
+}
+
+.accontent ul li{
+    font-size: var(--fsize);
+    color: #6a6b7c;
+    margin-bottom: 11px;
+    list-style-image: url("images/arrow.png");
+}
+
+.accontent a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #171822;
+    font-weight: 600;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+.accontent a::after{
+content: "";
+position: absolute;
+left: 0;
+top: 25px;
+width: 100%;
+height: 2px;
+border-radius: 0.5cm;
+background-color: var(--colorred);
+}
+
+.accontent a:hover{
+    color: var(--colorred);
+}
+
+
+}
+
+
+
+
+
+
+
+/* Desktops / Large Screen */
+@media(min-width:1025px) and (max-width:1200Px) {
+
+
+} 
+
+
+
